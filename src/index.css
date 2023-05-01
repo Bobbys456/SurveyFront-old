@@ -11,3 +11,73 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ #button{
+  position: absolute;
+  width: fit-content;
+  top: 49.6%;
+  left: 65%;
+  height: 5%;
+}
+
+#box{
+  background-image: linear-gradient(rgb(245, 190, 107),rgb(236, 213, 178));
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes shake {
+  0% { margin-left: 0rem; }
+  25% { margin-left: 0.5rem; }
+  75% { margin-left: -0.5rem; }
+  100% { margin-left: 0rem; }
+}
+
+.true{
+  display: block; /* Makes the input take up the full width of its container */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures padding and border don't increase the element's size */
+
+  position: absolute;
+  top: 50%;
+  right: 38%;
+  width: 27%;
+  height: 4%;
+
+}
+
+
+.false{
+
+  animation: shake 0.2s ease-in-out 0s 2;
+  box-shadow: 0 0 0.5em red;
+  
+  display: block; /* Makes the input take up the full width of its container */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures padding and border don't increase the element's size */
+
+  position: absolute;
+  top: 50%;
+  right: 38%;
+  width: 27%;
+  height: 4%;
+
+  border-color: crimson;
+  background-color: rgb(255, 187, 187);
+}
+
+.err{
+  color: rgb(110, 0, 0);
+  position: absolute;
+  top: 53%;
+  right: 38%;
+  width: 27%;
+  height: 4%;
+}
